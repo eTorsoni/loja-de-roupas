@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador - Loja de Roupas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sistema Loja de Roupas</h1>
+    </header>
+
+    <div class="container">
+        <section class="form-section">
+            <h2>Cadastrar Nova Peça</h2>
+            <form id="productForm">
+                <div class="input-group">
+                    <label for="nome">Nome da Peça</label>
+                    <input type="text" id="nome" placeholder="Ex: Camiseta Básica" required>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="preco">Preço (R$)</label>
+                        <input type="number" id="preco" step="0.01" placeholder="0.00" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="tamanho">Tamanho</label>
+                        <select id="tamanho" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                            <option value="Único">Único</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="cor">Cor</label>
+                        <input type="text" id="cor" placeholder="Ex: Azul Marinho">
+                    </div>
+                </div>
+
+                <button type="submit" id="btn-cadastrar">Adicionar Produto</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="list-section">
+            <h2>Estoque Atual</h2>
+            <div id="productList" class="product-grid">
+                <div class="card">
+                    <h3>Produto Exemplo</h3>
+                    <div class="price">R$ 99.99</div>
+                    <div class="details">
+                        <span>Tam: <strong>M</strong></span> |
+                        <span>Cor: Preta</span>
+                    </div>
+                    <button class="btn-delete">Excluir</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
