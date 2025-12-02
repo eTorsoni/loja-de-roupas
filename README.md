@@ -7,3 +7,5 @@
 6. Testei o servidor no Thunder rodando node server.js.
 7. Instalei npm install cors dotenv @supabase/supabase-js para conectar o supabase.
 8. Criei o arquivo .env e adicionei minhas chaves da tabela do supabase.
+
+https://youtu.be/OdXCuzaqNuw - LINK DO YOUTUBE
